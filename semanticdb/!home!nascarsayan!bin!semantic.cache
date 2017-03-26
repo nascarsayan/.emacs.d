@@ -1,0 +1,24 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "random.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("argparse" include nil nil [1068 1083])
+            ("sys" include nil nil [1084 1098])
+            ("os" include nil nil [1084 1098])
+            ("random" include nil nil [1099 1112])
+            ("args" variable nil nil [1114 1123])
+            ("check_args" function nil nil [1125 2264])
+            ("main" function nil nil [2266 2441])
+            ("if" code nil nil [2443 2607]))          
+      :file "random.py"
+      :pointmax 2612
+      :fsize 2611
+      :lastmodtime '(22379 41245 328669 354000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,43 @@
+;; Object multi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "multi/"
+  :tables
+  (list
+    (semanticdb-table "f1.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("power" function
+               (:arguments 
+                  ( ("b" variable (:type "double") (reparse-symbol arg-sub-list) [32 41])
+                    ("idx" variable (:type "double") (reparse-symbol arg-sub-list) [42 53]))                  
+                :type "double")
+                nil [19 79]))          
+      :file "f1.c"
+      :pointmax 80
+      :fsize 79
+      :lastmodtime '(22736 17361 506282 349000)
+      :unmatched-syntax nil)
+    (semanticdb-table "f2.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("f1.c" include nil nil [20 35])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [45 54])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55 68]))                  
+                :type "int")
+                nil [36 115]))          
+      :file "f2.c"
+      :pointmax 116
+      :fsize 115
+      :lastmodtime '(22736 17361 506282 349000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Documents!Code!C!multi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

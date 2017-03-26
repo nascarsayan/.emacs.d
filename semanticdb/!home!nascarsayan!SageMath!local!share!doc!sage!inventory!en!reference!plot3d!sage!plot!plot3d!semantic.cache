@@ -1,0 +1,57 @@
+;; Object plot3d/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plot3d/"
+  :tables
+  (list
+    (semanticdb-table "platonic-1.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("G" code nil nil [1 76])
+            ("G" variable nil nil [77 145])
+            ("G" variable nil nil [146 194]))          
+      :file "platonic-1.py"
+      :pointmax 209
+      :fsize 208
+      :lastmodtime '(22449 36042 421708 34000)
+      :unmatched-syntax '((NAME 195 . 206) ($EOI 209 . 209)))
+    (semanticdb-table "platonic-2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("G" variable nil nil [1 42])
+            ("G" variable nil nil [43 83])
+            ("G" variable nil nil [84 125])
+            ("G" variable nil nil [126 199]))          
+      :file "platonic-2.py"
+      :pointmax 214
+      :fsize 213
+      :lastmodtime '(22449 36046 81708 164000)
+      :unmatched-syntax '((NAME 200 . 211) ($EOI 214 . 214)))
+    (semanticdb-table "platonic-4.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "platonic-4.py"
+      :pointmax 20
+      :fsize 19
+      :lastmodtime '(22449 36049 433708 283000)
+      :unmatched-syntax '(($EOI 20 . 20)))
+    (semanticdb-table "platonic-15.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "platonic-15.py"
+      :pointmax 27
+      :fsize 26
+      :lastmodtime '(22449 36070 957709 50000)
+      :unmatched-syntax '(($EOI 27 . 27)))
+    (semanticdb-table "plot3d-6.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("S" variable nil nil [1 47])
+            ("theta, z" code nil nil [48 71]))          
+      :file "plot3d-6.py"
+      :pointmax 144
+      :fsize 143
+      :lastmodtime '(22449 36099 325710 60000)
+      :unmatched-syntax '((NAME 72 . 83) ($EOI 144 . 144))))
+  :file "!home!nascarsayan!SageMath!local!share!doc!sage!inventory!en!reference!plot3d!sage!plot!plot3d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

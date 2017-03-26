@@ -1,0 +1,89 @@
+;; Object Sort/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Sort/"
+  :tables
+  (list
+    (semanticdb-table "counting_sort.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("counting" function
+               (:pointer 1
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36 45])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [46 55])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [56 64]))                  
+                :type "int")
+                nil [22 382]))          
+      :file "counting_sort.c"
+      :pointmax 384
+      :fsize 383
+      :lastmodtime '(22383 23865 756855 789000)
+      :unmatched-syntax nil)
+    (semanticdb-table "counting_sort_demo.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("counting_sort.c" include nil nil [20 46])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [58 67])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68 81]))                  
+                :type "int")
+                nil [48 512]))          
+      :file "counting_sort_demo.c"
+      :pointmax 513
+      :fsize 512
+      :lastmodtime '(22383 23812 612853 897000)
+      :unmatched-syntax nil)
+    (semanticdb-table "radix_sort.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("stdlib.h" include (:system-flag t) nil [19 38])
+            ("radix_sort" function
+               (:pointer 1
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [56 65])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [66 75])
+                    ("max_place" variable (:type "int") (reparse-symbol arg-sub-list) [76 90]))                  
+                :type "int")
+                nil [40 726]))          
+      :file "radix_sort.c"
+      :pointmax 727
+      :fsize 726
+      :lastmodtime '(22383 33898 121213 64000)
+      :unmatched-syntax nil)
+    (semanticdb-table "radix_sort_demo.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("radix_sort.c" include nil nil [20 43])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [54 63])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64 77]))                  
+                :type "int")
+                nil [45 600]))          
+      :file "radix_sort_demo.c"
+      :pointmax 601
+      :fsize 600
+      :lastmodtime '(22383 33948 893214 872000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Sort!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

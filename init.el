@@ -1,51 +1,23 @@
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
+
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+
+(add-to-list 'load-path "~/.emacs.d/custom")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai")
+(load-theme 'monokai t)
 
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
+(setq initial-scratch-message "")
 
-(defalias 'yes-or-no-p 'y-or-n-p)
+(defalias 'yes-or-no-p 'y-or-n-p) ;;; yes --> y ; no --> n
 
-(defconst demo-packages
-  '(anzu
-    company
-    duplicate-thing
-    ggtags
-    helm
-    helm-gtags
-    helm-projectile
-    helm-swoop
-    ;; function-args
-    clean-aindent-mode
-    comment-dwim-2
-    dtrt-indent
-    ws-butler
-    iedit
-    yasnippet
-    smartparens
-    projectile
-    volatile-highlights
-    undo-tree
-    zygospore))
-
-(defun install-packages ()
-  "Install all required packages."
-  (interactive)
-  (unless package-archive-contents
-    (package-refresh-contents))
-  (dolist (package demo-packages)
-    (unless (package-installed-p package)
-      (package-install package))))
-
-(install-packages)
-
-;; this variables must be set before load helm-gtags
-;; you can change to any prefix key of your choice
 (setq helm-gtags-prefix-key "\C-cg")
-
-(add-to-list 'load-path "~/.emacs.d/custom")
 
 (require 'setup-helm)
 (require 'setup-helm-gtags)
@@ -55,98 +27,35 @@
 
 (windmove-default-keybindings)
 
-;; function-args
-;; (require 'function-args)
-;; (fa-config-default)
-;; (define-key c-mode-map  [(tab)] 'company-complete)
-;; (define-key c++-mode-map  [(tab)] 'company-complete)
-
-;; company
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-(delete 'company-semantic company-backends)
-(define-key c-mode-map  [(tab)] 'company-complete)
-(define-key c++-mode-map  [(tab)] 'company-complete)
-;; (define-key c-mode-map  [(control tab)] 'company-complete)
-;; (define-key c++-mode-map  [(control tab)] 'company-complete)
-
-;; company-c-headers
-(add-to-list 'company-backends 'company-c-headers)
-
-;; hs-minor-mode for folding source code
-(add-hook 'c-mode-common-hook 'hs-minor-mode)
-
-;; Available C style:
-;; “gnu”: The default style for GNU projects
-;; “k&r”: What Kernighan and Ritchie, the authors of C used in their book
-;; “bsd”: What BSD developers use, aka “Allman style” after Eric Allman.
-;; “whitesmith”: Popularized by the examples that came with Whitesmiths C, an early commercial C compiler.
-;; “stroustrup”: What Stroustrup, the author of C++ used in his book
-;; “ellemtel”: Popular C++ coding standards as defined by “Programming in C++, Rules and Recommendations,” Erik Nyquist and Mats Henricson, Ellemtel
-;; “linux”: What the Linux developers use for kernel development
-;; “python”: What Python developers use for extension modules
-;; “java”: The default style for java-mode (see below)
-;; “user”: When you want to define your own style
-(setq
- c-default-style "linux" ;; set style to "linux"
- )
-
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 
-;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 
 ;; show unncessary whitespace that can mess up your diff
 (add-hook 'prog-mode-hook (lambda () (interactive) (setq show-trailing-whitespace 1)))
 
-;; use space to indent by default
-(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
 
-;; set appearance of a tab that is represented by 4 spaces
-(setq-default tab-width 4)
-
-;; Compilation
-(global-set-key (kbd "<f5>") (lambda ()
-                               (interactive)
-                               (setq-local compilation-read-command nil)
-                               (call-interactively 'compile)))
-
-;; setup GDB
-(setq
- ;; use gdb-many-windows by default
- gdb-many-windows t
-
- ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
- )
-
-;; Package: clean-aindent-mode
 (require 'clean-aindent-mode)
 (add-hook 'prog-mode-hook 'clean-aindent-mode)
 
-;; Package: dtrt-indent
 (require 'dtrt-indent)
 (dtrt-indent-mode 1)
 
-;; Package: ws-butler
 (require 'ws-butler)
 (add-hook 'prog-mode-hook 'ws-butler-mode)
 
-;; Package: yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
 
-;; Package: smartparens
 (require 'smartparens-config)
 (setq sp-base-key-bindings 'paredit)
 (setq sp-autoskip-closing-pair 'always)
 (setq sp-hybrid-kill-entire-symbol nil)
 (sp-use-paredit-bindings)
-
 (show-smartparens-global-mode +1)
 (smartparens-global-mode 1)
 
-;; Package: projejctile
 (require 'projectile)
 (projectile-global-mode)
 (setq projectile-enable-caching t)
@@ -157,4 +66,85 @@
 (setq projectile-indexing-method 'alien)
 
 ;; Package zygospore
-(global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+;;(global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+(require 'semantic)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(semantic-mode 1)
+(require 'auto-complete-config)
+(ac-config-default)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x ;") 'comment-region)
+(global-set-key (kbd "C-x C-;") 'uncomment-region)
+(global-linum-mode t)
+(setq case-fold-search t)
+(setq require-final-newline t)
+(setq truncate-lines t)
+(setq truncate-partial-width-windows t)
+(line-number-mode t)
+(column-number-mode t)
+(require 'font-lock)
+(setq font-lock-maximum-decoration t)
+(global-font-lock-mode t)
+(global-hi-lock-mode nil)
+(setq jit-lock-contextually t)
+(setq jit-lock-stealth-verbose t)
+(defun djcb-opacity-modify (&optional dec)
+  (let* ((alpha-or-nil (frame-parameter nil 'alpha)) ; nil before setting
+         (oldalpha (if alpha-or-nil alpha-or-nil 100))
+         (newalpha (if dec (- oldalpha 10) (+ oldalpha 10))))
+    (when (and (>= newalpha frame-alpha-lower-limit) (<= newalpha 100))
+      (modify-frame-parameters nil (list (cons 'alpha newalpha))))))
+(global-set-key (kbd "C-8") '(lambda()(interactive)(djcb-opacity-modify))) ;; increase opacity
+(global-set-key (kbd "C-9") '(lambda()(interactive)(djcb-opacity-modify t))) ;; decrease opacity
+(global-set-key (kbd "C-0") '(lambda()(interactive)
+                               (modify-frame-parameters nil `((alpha . 100)))))
+
+(global-set-key (kbd "<f5>") (lambda ()
+                               (interactive)
+                               (setq-local compilation-read-command nil)
+                               (call-interactively 'compile)))
+
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(delete 'company-semantic company-backends)
+(define-key c-mode-map  (kbd "<backtab>") 'company-complete)
+(define-key c++-mode-map  (kbd "<backtab>") 'company-complete)
+(add-to-list 'company-backends 'company-c-headers)
+
+(add-hook 'c-mode-common-hook 'hs-minor-mode)
+
+(setq c-default-style "gnu") ;; set style to "gnu"
+(global-flycheck-mode)
+(require 'compile)
+(add-hook 'c-mode-hook
+          (lambda ()
+            (unless (file-exists-p "Makefile")
+              (set (make-local-variable 'compile-command)
+                   ;; emulate make's .c.o implicit pattern rule, but with
+                   ;; different defaults for the CC, CPPFLAGS, and CFLAGS
+                   ;; variables:
+                   ;; $(CC) -c -o $@ $(CPPFLAGS) $(CFLAGS) $<
+                   (let ((file (file-name-nondirectory buffer-file-name)))
+                     (format "%s -o %s %s %s %s -lm"
+                             (or (getenv "CC") "gcc")
+                             (file-name-sans-extension file)
+                             (or (getenv "CPPFLAGS") "-DDEBUG=9")
+                             (or (getenv "CFLAGS") "-ansi -pedantic -Wall -g")
+                             file))))))
+(require 'cc-mode)
+(defun my:ac-c-header-init ()
+  (require 'auto-complete-c-headers)
+  (add-to-list 'ac-sources 'ac-source-c-headers)
+  (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include"))
+(defun my:add-semantic-to-autocomplete()
+  (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+;; setup GDB
+(setq
+ gdb-many-windows t
+ gdb-show-main t)
+
+(provide 'init)
+
+;;; init.el ends here

@@ -1,0 +1,96 @@
+;; Object Coding/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Coding/"
+  :tables
+  (list
+    (semanticdb-table "hash.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("hashTable" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("hash" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [61 91])
+            ("eleCount" variable
+               (:default-value "0"
+                :type "int")
+                nil [92 109])
+            ("node" type
+               (:members 
+                  ( ("key" variable (:type "int") (reparse-symbol classsubparts) [129 142])
+                    ("age" variable (:type "int") (reparse-symbol classsubparts) [129 142])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [147 162])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [167 185]))                  
+                :type "struct")
+                nil [111 188])
+            ("hash" type
+               (:members 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [208 226])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [231 241]))                  
+                :type "struct")
+                nil [190 244])
+            ("createNode" function
+               (:pointer 1
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [271 279])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [280 291])
+                    ("age" variable (:type "int") (reparse-symbol arg-sub-list) [292 300]))                  
+                :type ("node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [246 516])
+            ("insertToHash" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [536 544])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [545 556])
+                    ("age" variable (:type "int") (reparse-symbol arg-sub-list) [557 565]))                  
+                :type "void")
+                nil [518 1135])
+            ("deleteFromHash" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1157 1165]))                  
+                :type "void")
+                nil [1137 2123])
+            ("searchInHash" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [2143 2151]))                  
+                :type "void")
+                nil [2125 2766])
+            ("display" function (:type "void") nil [2768 3385])
+            ("main" function (:type "int") nil [3387 4821]))          
+      :file "hash.c"
+      :pointmax 4822
+      :fsize 4821
+      :lastmodtime '(22460 23115 893294 35000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

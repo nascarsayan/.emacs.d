@@ -1,0 +1,364 @@
+;; Object Algo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Algo/"
+  :tables
+  (list
+    (semanticdb-table "a3_16.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("MAXSIZE" variable (:constant-flag t) nil [48 55])
+            ("left" variable (:constant-flag t) nil [69 73])
+            ("right" variable (:constant-flag t) nil [89 94])
+            ("parent" variable (:constant-flag t) nil [114 120])
+            ("_node" type
+               (:members 
+                  ( ("priority" variable (:type "int") (reparse-symbol classsubparts) [153 166])
+                    ("min" variable (:type "int") (reparse-symbol classsubparts) [169 177]))                  
+                :type "struct")
+                nil [128 184])
+            ("node" type
+               (:typedef ("_node" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [128 184])
+            ("heap" variable
+               (:dereference 1
+                :type ("node" type (:type "class") nil nil))
+                nil [186 205])
+            ("create_node" function
+               (:arguments 
+                  ( ("val" variable (:type "int") (reparse-symbol arg-sub-list) [224 232]))                  
+                :type ("node" type (:type "class") nil nil))
+                nil [207 302])
+            ("swap" function
+               (:arguments 
+                  ( ("n1" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [313 322])
+                    ("n2" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 332]))                  
+                :type "void")
+                nil [303 379])
+            ("bubble_up" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [396 407])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [408 417]))                  
+                :type "void")
+                nil [381 571])
+            ("bubble_down" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [590 601])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [602 611])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [612 618]))                  
+                :type "void")
+                nil [573 909])
+            ("initHeap" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [924 935])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [936 945]))                  
+                :type "void")
+                nil [910 1021])
+            ("initMin_help" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1041 1052])
+                    ("ind" variable (:type "int") (reparse-symbol arg-sub-list) [1053 1061])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1062 1071]))                  
+                :type "void")
+                nil [1023 1336])
+            ("initMin" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1351 1362])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1363 1372]))                  
+                :type "void")
+                nil [1338 1407])
+            ("insert" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1421 1432])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1433 1442])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1443 1451]))                  
+                :type "void")
+                nil [1409 1603])
+            ("deleteMax" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1620 1631])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1632 1641]))                  
+                :type "void")
+                nil [1605 1713]))          
+      :file "a3_16.c"
+      :pointmax 1714
+      :fsize 1713
+      :lastmodtime '(22452 7147 530695 730000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXSIZE" . ((number "1024" 56 . 60)))
+          ("right" (spp-arg-list ("n") 94 . 97) . 
+              ((number "2" 98 . 99) (punctuation "*" 99 . 100) (symbol "n" 100 . 101) (punctuation "+" 102 . 103) (number "1" 104 . 105)))
+          ("left" (spp-arg-list ("n") 73 . 76) . 
+              ((number "2" 77 . 78) (punctuation "*" 78 . 79) (symbol "n" 79 . 80)))
+          ("parent" (spp-arg-list ("n") 120 . 123) . 
+              ((symbol "n" 124 . 125) (punctuation "/" 125 . 126) (number "2" 126 . 127)))
+          )
+)
+    (semanticdb-table "a4_16.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("limits.h" include (:system-flag t) nil [40 59])
+            ("time.h" include (:system-flag t) nil [60 77])
+            ("left" variable (:constant-flag t) nil [86 90])
+            ("right" variable (:constant-flag t) nil [106 111])
+            ("parent" variable (:constant-flag t) nil [131 137])
+            ("sum_at_ind" variable (:constant-flag t) nil [153 163])
+            ("_node" type
+               (:members 
+                  ( ("idx_1" variable (:type "int") (reparse-symbol classsubparts) [229 239])
+                    ("idx_2" variable (:type "int") (reparse-symbol classsubparts) [242 252]))                  
+                :type "struct")
+                nil [204 259])
+            ("pair" type
+               (:typedef ("_node" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [204 259])
+            ("swap" function
+               (:arguments 
+                  ( ("val1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [271 281])
+                    ("val2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [282 292]))                  
+                :type "void")
+                nil [261 343])
+            ("swap2" function
+               (:arguments 
+                  ( ("p1" variable
+                       (:pointer 1
+                        :type ("pair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [355 364])
+                    ("p2" variable
+                       (:pointer 1
+                        :type ("pair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [365 374]))                  
+                :type "void")
+                nil [344 424])
+            ("printarray" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [441 450])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [451 460]))                  
+                :type "void")
+                nil [425 544])
+            ("sum_min" function
+               (:arguments 
+                  ( ("heap3" variable
+                       (:pointer 1
+                        :type ("pair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [557 569])
+                    ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [569 580])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [580 591])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [591 597])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [597 603]))                  
+                :type "int")
+                nil [545 732])
+            ("bubble_down" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [750 760])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [761 770])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [771 777]))                  
+                :type "void")
+                nil [733 1090])
+            ("heapify" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1104 1114])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1115 1124]))                  
+                :type "void")
+                nil [1091 1200])
+            ("extract_min" function
+               (:arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1218 1228])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1229 1238]))                  
+                :type "int")
+                nil [1202 1345])
+            ("method1" function
+               (:arguments 
+                  ( ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1360 1371])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1372 1383])
+                    ("size1" variable (:type "int") (reparse-symbol arg-sub-list) [1384 1394])
+                    ("size2" variable (:type "int") (reparse-symbol arg-sub-list) [1395 1405])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [1406 1412]))                  
+                :type "void")
+                nil [1347 1833])
+            ("insertQ" function
+               (:arguments 
+                  ( ("heap3" variable
+                       (:pointer 1
+                        :type ("pair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1848 1860])
+                    ("size3" variable (:type "int") (reparse-symbol arg-sub-list) [1861 1871])
+                    ("ind1" variable (:type "int") (reparse-symbol arg-sub-list) [1872 1881])
+                    ("ind2" variable (:type "int") (reparse-symbol arg-sub-list) [1882 1891])
+                    ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1892 1903])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1904 1915]))                  
+                :type "void")
+                nil [1835 2142])
+            ("insert_condi" function
+               (:arguments 
+                  ( ("heap3" variable
+                       (:pointer 1
+                        :type ("pair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2162 2174])
+                    ("size3" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2175 2186])
+                    ("ind1" variable (:type "int") (reparse-symbol arg-sub-list) [2187 2196])
+                    ("ind2" variable (:type "int") (reparse-symbol arg-sub-list) [2197 2206])
+                    ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2207 2218])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2219 2230])
+                    ("done" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2231 2242])
+                    ("size1" variable (:type "int") (reparse-symbol arg-sub-list) [2243 2253])
+                    ("size2" variable (:type "int") (reparse-symbol arg-sub-list) [2254 2264]))                  
+                :type "void")
+                nil [2144 2448])
+            ("extractQ" function
+               (:arguments 
+                  ( ("heap3" variable
+                       (:pointer 1
+                        :type ("pair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2463 2475])
+                    ("size3" variable (:type "int") (reparse-symbol arg-sub-list) [2476 2486])
+                    ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2487 2498])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2499 2510]))                  
+                :type ("pair" type (:type "class") nil nil))
+                nil [2449 2938])
+            ("method2" function
+               (:arguments 
+                  ( ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2952 2963])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2964 2975])
+                    ("size1" variable (:type "int") (reparse-symbol arg-sub-list) [2976 2986])
+                    ("size2" variable (:type "int") (reparse-symbol arg-sub-list) [2987 2997])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [2998 3004]))                  
+                :type "void")
+                nil [2939 4158])
+            ("method3" function
+               (:arguments 
+                  ( ("heap1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4172 4183])
+                    ("heap2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4184 4195])
+                    ("size1" variable (:type "int") (reparse-symbol arg-sub-list) [4196 4206])
+                    ("size2" variable (:type "int") (reparse-symbol arg-sub-list) [4207 4217])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [4218 4224]))                  
+                :type "void")
+                nil [4159 5246])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5256 5265])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5266 5279]))                  
+                :type "int")
+                nil [5247 6408]))          
+      :file "a4_16.c"
+      :pointmax 6410
+      :fsize 6409
+      :lastmodtime '(22455 61498 778543 973000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("sum_at_ind" (spp-arg-list ("heap" "i") 163 . 172) . 
+              ((symbol "heap" 173 . 177) (semantic-list "[i]" 177 . 180) (punctuation "." 180 . 181) (symbol "idx_1" 181 . 186) (punctuation "+" 187 . 188) (symbol "heap" 189 . 193) (semantic-list "[i]" 193 . 196) (punctuation "." 196 . 197) (symbol "idx_2" 197 . 202)))
+          ("right" (spp-arg-list ("i") 111 . 114) . 
+              ((symbol "i" 115 . 116) (punctuation "*" 116 . 117) (number "2" 117 . 118) (punctuation "+" 119 . 120) (number "1" 121 . 122)))
+          ("left" (spp-arg-list ("i") 90 . 93) . 
+              ((symbol "i" 94 . 95) (punctuation "*" 95 . 96) (number "2" 96 . 97)))
+          ("parent" (spp-arg-list ("i") 137 . 140) . 
+              ((symbol "i" 141 . 142) (punctuation "/" 142 . 143) (number "2" 143 . 144)))
+          )
+))
+  :file "!home!nascarsayan!Coding!C!Algo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

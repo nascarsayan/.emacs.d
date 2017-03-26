@@ -1,0 +1,156 @@
+;; Object Debdut/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Debdut/"
+  :tables
+  (list
+    (semanticdb-table "chapter1_1.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [29 38])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39 52]))                  
+                :type "int")
+                nil [20 318]))          
+      :file "chapter1_1.c"
+      :pointmax 319
+      :fsize 318
+      :lastmodtime '(22422 15483 97905 498000)
+      :unmatched-syntax nil)
+    (semanticdb-table "chapter1_4.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [200 218])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [228 237])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [238 251])
+                    ("env" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [252 264]))                  
+                :type "int")
+                nil [219 613]))          
+      :file "chapter1_4.c"
+      :pointmax 614
+      :fsize 613
+      :lastmodtime '(22425 64918 8267 864000)
+      :unmatched-syntax nil)
+    (semanticdb-table "chapter2_3.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [204 222])
+            ("string.h" include (:system-flag t) nil [223 242])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [293 330])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [333 352])
+            ("printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [390 397]))                  
+                :type "int")
+                nil [355 399])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [402 425])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [428 448])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [451 471])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [252 261])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [262 275])
+                    ("env" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [276 288]))                  
+                :type "int")
+                nil [243 485]))          
+      :file "chapter2_3.c"
+      :pointmax 486
+      :fsize 485
+      :lastmodtime '(22426 63663 337629 508000)
+      :unmatched-syntax nil)
+    (semanticdb-table "chapter2_4.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [200 218])
+            ("string.h" include (:system-flag t) nil [219 238])
+            ("stdlib.h" include (:system-flag t) nil [239 258])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [268 277])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [278 291])
+                    ("env" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [292 304]))                  
+                :type "int")
+                nil [259 1087]))          
+      :file "chapter2_4.c"
+      :pointmax 1088
+      :fsize 1087
+      :lastmodtime '(22426 61522 561553 270000)
+      :unmatched-syntax nil)
+    (semanticdb-table "category_print.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("null" variable (:constant-flag t) nil [69 73])
+            ("eof" variable (:constant-flag t) nil [84 87])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [103 112])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [113 126]))                  
+                :type "int")
+                nil [94 595]))          
+      :file "category_print.c"
+      :pointmax 596
+      :fsize 464
+      :lastmodtime '(22436 10664 148829 846000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("eof" . ((string "'\\n'" 88 . 92)))
+          ("null" . ((number "0" 74 . 75)))
+          )
+))
+  :file "!home!nascarsayan!Coding!C!Debdut!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

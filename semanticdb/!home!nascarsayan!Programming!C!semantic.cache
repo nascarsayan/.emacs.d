@@ -1,0 +1,188 @@
+;; Object C/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "C/"
+  :tables
+  (list
+    (semanticdb-table "sparse.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("col" type
+               (:members 
+                  ( ("val" variable (:type "int") (reparse-symbol classsubparts) [64 72])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("col" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [75 92]))                  
+                :type "struct")
+                nil [41 101])
+            ("column" type
+               (:typedef ("col" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [41 101])
+            ("_row" type
+               (:members 
+                  ( ("first" variable
+                       (:pointer 1
+                        :type ("column" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [177 191])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_row" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [194 212]))                  
+                :type "struct")
+                nil [153 218])
+            ("row" type
+               (:typedef ("_row" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [153 218])
+            ("insertele" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type ("row" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [472 482])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [483 489])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [490 496])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [497 507]))                  
+                :type "void")
+                nil [456 1373])
+            ("printsparse" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("row" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1393 1402])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [1403 1409])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [1410 1416]))                  
+                :type "void")
+                nil [1375 1735])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1747 1756])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1757 1770]))                  
+                :type "int")
+                nil [1737 2167]))          
+      :file "sparse.c"
+      :pointmax 2168
+      :fsize 2167
+      :lastmodtime '(22292 27933 856032 379000)
+      :unmatched-syntax nil)
+    (semanticdb-table "chess.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("maxspread" function
+               (:arguments 
+                  ( ("board" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [35 47])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [48 54])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [55 61])
+                    ("dir" variable (:type "int") (reparse-symbol arg-sub-list) [62 70])
+                    ("area" variable (:type "int") (reparse-symbol arg-sub-list) [70 79])
+                    ("maxarea" variable (:type "int") (reparse-symbol arg-sub-list) [79 91]))                  
+                :type "void")
+                nil [20 244])
+            ("maxblack" function
+               (:arguments 
+                  ( ("board" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [258 270]))                  
+                :type "int")
+                nil [245 438])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [448 457])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [458 471]))                  
+                :type "int")
+                nil [439 972]))          
+      :file "chess.c"
+      :pointmax 973
+      :fsize 846
+      :lastmodtime '(22293 54427 789032 483000)
+      :unmatched-syntax nil)
+    (semanticdb-table "regex.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("z" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("key" variable (:type "int") (reparse-symbol classsubparts) [38 46])
+                          ("next" variable
+                             (:pointer 1
+                              :type ("" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [49 62]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [20 66])
+            ("alias" type
+               (:typedef ("type" type (:type "class") nil nil)
+                :type "typedef")
+                nil [67 86])
+            ("main" function (:type "int") nil [87 221]))          
+      :file "regex.c"
+      :pointmax 223
+      :fsize 222
+      :lastmodtime '(22299 39138 443875 91000)
+      :unmatched-syntax '((symbol 67 . 69)))
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function (:type "int") nil [40 129]))          
+      :file "test.c"
+      :pointmax 130
+      :fsize 266
+      :lastmodtime '(22360 52170 639777 514000)
+      :unmatched-syntax nil)
+    (semanticdb-table "factorial.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("fact" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [29 35]))                  
+                :type "int")
+                nil [20 81])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [91 100])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [101 114]))                  
+                :type "int")
+                nil [82 166]))          
+      :file "factorial.c"
+      :pointmax 179
+      :fsize 176
+      :lastmodtime '(22366 24712 288012 806000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Programming!C!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

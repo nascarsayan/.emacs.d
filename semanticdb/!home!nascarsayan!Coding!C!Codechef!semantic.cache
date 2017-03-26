@@ -1,0 +1,53 @@
+;; Object Codechef/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Codechef/"
+  :tables
+  (list
+    (semanticdb-table "sums_in_a_triangle.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("malloc.h" include (:system-flag t) nil [58 77])
+            ("findmax" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [91 97])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [98 104])
+                    ("lines" variable (:type "int") (reparse-symbol arg-sub-list) [105 115]))                  
+                :type "void")
+                nil [78 116])
+            ("triangle" variable
+               (:pointer 2
+                :type "int")
+                nil [118 141])
+            ("sums" variable
+               (:pointer 2
+                :type "int")
+                nil [118 141])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [152 161])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [162 175]))                  
+                :type "int")
+                nil [143 976])
+            ("findmax" function
+               (:arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [990 996])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [997 1003])
+                    ("lines" variable (:type "int") (reparse-symbol arg-sub-list) [1004 1014]))                  
+                :type "void")
+                nil [977 1264]))          
+      :file "sums_in_a_triangle.c"
+      :pointmax 1265
+      :fsize 1263
+      :lastmodtime '(22428 41054 231624 755000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Codechef!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

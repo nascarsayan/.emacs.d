@@ -1,0 +1,104 @@
+;; Object Coding/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Coding/"
+  :tables
+  (list
+    (semanticdb-table "heapify.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [127 144])
+            ("stdlib.h" include (:system-flag t) nil [145 163])
+            ("malloc.h" include (:system-flag t) nil [164 182])
+            ("heapify" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [197 204])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [204 210])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [210 219]))                  
+                :type "void")
+                nil [184 220])
+            ("buildheap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [236 243])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [243 252]))                  
+                :type "void")
+                nil [221 253])
+            ("swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [264 271])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [271 278]))                  
+                :type "void")
+                nil [254 279])
+            ("printer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [293 300])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [300 309]))                  
+                :type "void")
+                nil [280 310])
+            ("main" function (:type "int") nil [313 497])
+            ("heapify" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [512 519])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [519 525])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [525 534]))                  
+                :type "void")
+                nil [499 824])
+            ("buildheap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [840 847])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [847 856]))                  
+                :type "void")
+                nil [825 955])
+            ("swap" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [967 974])
+                    ("b" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [974 981]))                  
+                :type "void")
+                nil [957 1028])
+            ("printer" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1042 1049])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1049 1058]))                  
+                :type "void")
+                nil [1029 1133]))          
+      :file "heapify.c"
+      :pointmax 1134
+      :fsize 1133
+      :lastmodtime '(22452 2253 323428 100000)
+      :unmatched-syntax nil))
+  :file "!media!nascarsayan!KouseiArima!Coding!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

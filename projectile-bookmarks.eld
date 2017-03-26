@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Documents/Code/" "~/Software/hotstarsportslivestreamer/" "~/Software/hangups/" "~/.bash_it/" "/media/nascarsayan/KouseiArima/Clone/.emacs.d/" "~/SageMath/" "/media/nascarsayan/KouseiArima/Softwares/Linux/SageMath/" "~/Coding/C/Recursion/")

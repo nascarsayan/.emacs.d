@@ -1,0 +1,19 @@
+;; Object nascarsayan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nascarsayan/"
+  :tables
+  (list
+
+    (semanticdb-table "check.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [20 76]))          
+      :file "check.c"
+      :pointmax 77
+      :fsize 76
+      :lastmodtime '(22457 31624 271916 799000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

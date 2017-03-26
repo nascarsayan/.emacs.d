@@ -1,0 +1,541 @@
+;; Object Recursion/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Recursion/"
+  :tables
+  (list
+    (semanticdb-table "alternate_sort.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("alter_sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arr1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [57 67])
+                    ("arr2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [68 78])
+                    ("arr3" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [79 89])
+                    ("size1" variable (:type "int") (reparse-symbol arg-sub-list) [90 100])
+                    ("size2" variable (:type "int") (reparse-symbol arg-sub-list) [101 111])
+                    ("arr_num" variable (:type "int") (reparse-symbol arg-sub-list) [112 124])
+                    ("index1" variable (:type "int") (reparse-symbol arg-sub-list) [125 136])
+                    ("index2" variable (:type "int") (reparse-symbol arg-sub-list) [137 148])
+                    ("index3" variable (:type "int") (reparse-symbol arg-sub-list) [149 160]))                  
+                :type "void")
+                nil [41 161])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [172 181])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [182 195]))                  
+                :type "int")
+                nil [163 823])
+            ("alter_sort" function
+               (:arguments 
+                  ( ("arr1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [841 851])
+                    ("arr2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [852 862])
+                    ("arr3" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [863 873])
+                    ("size1" variable (:type "int") (reparse-symbol arg-sub-list) [874 884])
+                    ("size2" variable (:type "int") (reparse-symbol arg-sub-list) [885 895])
+                    ("arr_num" variable (:type "int") (reparse-symbol arg-sub-list) [896 908])
+                    ("index1" variable (:type "int") (reparse-symbol arg-sub-list) [909 920])
+                    ("index2" variable (:type "int") (reparse-symbol arg-sub-list) [921 932])
+                    ("index3" variable (:type "int") (reparse-symbol arg-sub-list) [933 944]))                  
+                :type "void")
+                nil [825 1584]))          
+      :file "alternate_sort.c"
+      :pointmax 1585
+      :fsize 1584
+      :lastmodtime '(22430 51507 209042 301000)
+      :unmatched-syntax nil)
+    (semanticdb-table "char_combinations.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("combo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 82])
+                    ("combis" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83 96])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [97 106])
+                    ("index_str" variable (:type "int") (reparse-symbol arg-sub-list) [107 121])
+                    ("index_combi" variable (:type "int") (reparse-symbol arg-sub-list) [122 138]))                  
+                :type "void")
+                nil [61 139])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [150 159])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [160 173]))                  
+                :type "int")
+                nil [141 508])
+            ("combo" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [520 530])
+                    ("combis" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [531 544])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [545 554])
+                    ("index_str" variable (:type "int") (reparse-symbol arg-sub-list) [555 569])
+                    ("index_combi" variable (:type "int") (reparse-symbol arg-sub-list) [570 586]))                  
+                :type "void")
+                nil [509 847]))          
+      :file "char_combinations.c"
+      :pointmax 848
+      :fsize 847
+      :lastmodtime '(22445 54902 718333 784000)
+      :unmatched-syntax nil)
+    (semanticdb-table "fifteen.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 118]))          
+      :file "fifteen.c"
+      :pointmax 119
+      :fsize 118
+      :lastmodtime '(22420 23008 973083 46000)
+      :unmatched-syntax nil)
+    (semanticdb-table "queens8.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("board" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53 66])
+                    ("safe" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67 79])
+                    ("row" variable (:type "char") (reparse-symbol arg-sub-list) [80 89])
+                    ("col" variable (:type "char") (reparse-symbol arg-sub-list) [90 99])
+                    ("q_count" variable (:type "char") (reparse-symbol arg-sub-list) [100 113]))                  
+                :type "void")
+                nil [41 114])
+            ("block" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("safe" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126 138])
+                    ("row" variable (:type "char") (reparse-symbol arg-sub-list) [139 148])
+                    ("col" variable (:type "char") (reparse-symbol arg-sub-list) [149 158])
+                    ("val" variable (:type "char") (reparse-symbol arg-sub-list) [159 168]))                  
+                :type "void")
+                nil [115 169])
+            ("printarr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [184 197]))                  
+                :type "void")
+                nil [170 198])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [209 218])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [219 232]))                  
+                :type "int")
+                nil [200 577])
+            ("config" function
+               (:arguments 
+                  ( ("board" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [591 604])
+                    ("safe" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [605 617])
+                    ("row" variable (:type "char") (reparse-symbol arg-sub-list) [618 627])
+                    ("col" variable (:type "char") (reparse-symbol arg-sub-list) [628 637])
+                    ("q_count" variable (:type "char") (reparse-symbol arg-sub-list) [638 651]))                  
+                :type "void")
+                nil [579 929])
+            ("block" function
+               (:arguments 
+                  ( ("safe" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [942 954])
+                    ("row" variable (:type "char") (reparse-symbol arg-sub-list) [955 964])
+                    ("col" variable (:type "char") (reparse-symbol arg-sub-list) [965 974])
+                    ("val" variable (:type "char") (reparse-symbol arg-sub-list) [975 984]))                  
+                :type "void")
+                nil [931 1390])
+            ("printarr" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1406 1419]))                  
+                :type "void")
+                nil [1392 1609]))          
+      :file "queens8.c"
+      :pointmax 1611
+      :fsize 1610
+      :lastmodtime '(22431 34950 577292 376000)
+      :unmatched-syntax nil)
+    (semanticdb-table "non_rep_partition.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("part" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("number" variable (:type "int") (reparse-symbol arg-sub-list) [51 62])
+                    ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [63 74])
+                    ("ind" variable (:type "int") (reparse-symbol arg-sub-list) [75 83]))                  
+                :type "void")
+                nil [41 84])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [95 104])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105 118]))                  
+                :type "int")
+                nil [86 277])
+            ("part" function
+               (:arguments 
+                  ( ("number" variable (:type "int") (reparse-symbol arg-sub-list) [289 300])
+                    ("array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [301 312])
+                    ("ind" variable (:type "int") (reparse-symbol arg-sub-list) [313 321]))                  
+                :type "void")
+                nil [279 588]))          
+      :file "non_rep_partition.c"
+      :pointmax 589
+      :fsize 588
+      :lastmodtime '(22432 49568 546964 680000)
+      :unmatched-syntax nil)
+    (semanticdb-table "interval.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("organize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [54 63])
+                    ("max_n" variable (:type "int") (reparse-symbol arg-sub-list) [64 74])
+                    ("curr_n" variable (:type "int") (reparse-symbol arg-sub-list) [75 86])
+                    ("occured" variable (:type "int") (reparse-symbol arg-sub-list) [87 99]))                  
+                :type "int")
+                nil [41 100])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [111 120])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121 134]))                  
+                :type "int")
+                nil [102 278])
+            ("organize" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [293 302])
+                    ("max_n" variable (:type "int") (reparse-symbol arg-sub-list) [303 313])
+                    ("curr_n" variable (:type "int") (reparse-symbol arg-sub-list) [314 325])
+                    ("occured" variable (:type "int") (reparse-symbol arg-sub-list) [326 338]))                  
+                :type "int")
+                nil [280 761]))          
+      :file "interval.c"
+      :pointmax 762
+      :fsize 761
+      :lastmodtime '(22425 64304 996246 33000)
+      :unmatched-syntax nil)
+    (semanticdb-table "palin_partition.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("find_palin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77 87])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [88 97]))                  
+                :type "void")
+                nil [61 98])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [109 118])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [119 132]))                  
+                :type "int")
+                nil [100 410])
+            ("find_palin" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [428 438])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [439 448]))                  
+                :type "void")
+                nil [412 1267]))          
+      :file "palin_partition.c"
+      :pointmax 1268
+      :fsize 1267
+      :lastmodtime '(22387 27656 46901 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "reach_z.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("steps" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("desti" variable (:type "int") (reparse-symbol arg-sub-list) [52 62])
+                    ("path" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [63 73])
+                    ("path_best" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [74 89])
+                    ("min_step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [90 104])
+                    ("curr_pos" variable (:type "int") (reparse-symbol arg-sub-list) [105 118])
+                    ("step_num" variable (:type "int") (reparse-symbol arg-sub-list) [119 132]))                  
+                :type "void")
+                nil [41 133])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [144 153])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [154 167]))                  
+                :type "int")
+                nil [135 548])
+            ("steps" function
+               (:arguments 
+                  ( ("desti" variable (:type "int") (reparse-symbol arg-sub-list) [561 571])
+                    ("path" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [572 582])
+                    ("path_best" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [583 598])
+                    ("min_step" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [599 613])
+                    ("curr_pos" variable (:type "int") (reparse-symbol arg-sub-list) [614 627])
+                    ("step_num" variable (:type "int") (reparse-symbol arg-sub-list) [628 641]))                  
+                :type "void")
+                nil [550 1062]))          
+      :file "reach_z.c"
+      :pointmax 1063
+      :fsize 1062
+      :lastmodtime '(22447 22971 925017 945000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sort_stack.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("stack" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("size" variable (:type "int") (reparse-symbol classsubparts) [60 83])
+                          ("curr" variable (:type "int") (reparse-symbol classsubparts) [60 83])
+                          ("array" variable
+                             (:pointer 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [60 83]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [41 91])
+            ("push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [103 113])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [114 123]))                  
+                :type "void")
+                nil [93 124])
+            ("pop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133 143]))                  
+                :type "int")
+                nil [125 144])
+            ("peek" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154 164]))                  
+                :type "int")
+                nil [145 165])
+            ("sort" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [178 188]))                  
+                :type ("stack" type (:type "class") nil nil))
+                nil [166 189])
+            ("display" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 213]))                  
+                :type "void")
+                nil [190 214])
+            ("push" function
+               (:arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [226 236])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [237 246]))                  
+                :type "void")
+                nil [216 369])
+            ("pop" function
+               (:arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [379 389]))                  
+                :type "int")
+                nil [371 504])
+            ("peek" function
+               (:arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [515 525]))                  
+                :type "int")
+                nil [506 638])
+            ("sort" function
+               (:pointer 1
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [652 662]))                  
+                :type ("stack" type (:type "class") nil nil))
+                nil [640 1163])
+            ("display" function
+               (:arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1178 1188]))                  
+                :type "void")
+                nil [1165 1303])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1314 1323])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1324 1337]))                  
+                :type "int")
+                nil [1305 2245]))          
+      :file "sort_stack.c"
+      :pointmax 2246
+      :fsize 2245
+      :lastmodtime '(22386 41424 900064 0)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Recursion!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

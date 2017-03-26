@@ -1,0 +1,261 @@
+;; Object Hash/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Hash/"
+  :tables
+  (list
+    (semanticdb-table "linear_probing.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("tableSize" variable
+               (:default-value "0"
+                :type "int")
+                nil [61 91])
+            ("totEle" variable
+               (:default-value "0"
+                :type "int")
+                nil [61 91])
+            ("hashTable" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [92 122])
+            ("node" type
+               (:members 
+                  ( ("age" variable (:type "int") (reparse-symbol classsubparts) [140 153])
+                    ("key" variable (:type "int") (reparse-symbol classsubparts) [140 153])
+                    ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [156 171])
+                    ("marker" variable (:type "int") (reparse-symbol classsubparts) [174 185]))                  
+                :type "struct")
+                nil [124 188])
+            ("insertInHash" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [208 216])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [217 228])
+                    ("age" variable (:type "int") (reparse-symbol arg-sub-list) [229 237]))                  
+                :type "void")
+                nil [190 642])
+            ("deleteFromHash" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [664 672]))                  
+                :type "void")
+                nil [644 1384])
+            ("searchElement" function
+               (:arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1405 1413]))                  
+                :type "void")
+                nil [1386 1998])
+            ("display" function (:type "void") nil [2000 2473])
+            ("main" function (:type "int") nil [2475 3520]))          
+      :file "linear_probing.c"
+      :pointmax 3521
+      :fsize 5176
+      :lastmodtime '(22461 11913 808710 535000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cuckoohash-AV.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [166 184])
+            ("stdlib.h" include (:system-flag t) nil [185 204])
+            ("string.h" include (:system-flag t) nil [205 224])
+            ("INIT_T" variable (:constant-flag t) nil [234 240])
+            ("MAX_ITER_CNT" variable (:constant-flag t) nil [251 263])
+            ("MAX_REC_LEVEL" variable (:constant-flag t) nil [275 288])
+            ("FAILURE" variable (:constant-flag t) nil [299 306])
+            ("SUCCESS" variable (:constant-flag t) nil [317 324])
+            ("PRESENT" variable (:constant-flag t) nil [335 342])
+            ("DOUBLE_SIZE" variable (:constant-flag t) nil [353 364])
+            ("CHANGE_PARAMS" variable (:constant-flag t) nil [375 388])
+            ("htbl" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("s" variable (:type "unsigned int") (reparse-symbol classsubparts) [412 427])
+                          ("t" variable (:type "unsigned int") (reparse-symbol classsubparts) [457 472])
+                          ("n" variable (:type "unsigned int") (reparse-symbol classsubparts) [494 509])
+                          ("a" variable (:type "unsigned int") (reparse-symbol classsubparts) [549 567])
+                          ("b" variable (:type "unsigned int") (reparse-symbol classsubparts) [549 567])
+                          ("data" variable
+                             (:pointer 2
+                              :type "char")
+                              (reparse-symbol classsubparts) [620 632]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [392 686])
+            ("init" function
+               (:prototype-flag t
+                :type ("htbl" type (:type "class") nil nil))
+                nil [779 793])
+            ("hash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [814 821])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [822 835])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [836 850]))                  
+                :type "unsigned int")
+                nil [794 851])
+            ("search" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [874 879])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [880 887]))                  
+                :type "unsigned int")
+                nil [852 888])
+            ("insertatpos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [908 913])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [914 921])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [922 935])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [936 943]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [889 944])
+            ("insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [959 964])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [965 972])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [973 979])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [980 985]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [945 986])
+            ("rehash" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1001 1006])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1007 1011])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1012 1019]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [987 1020])
+            ("readfile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1074 1081])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1082 1089]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [1058 1090])
+            ("init" function (:type ("htbl" type (:type "class") nil nil)) nil [1163 1435])
+            ("hash" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1526 1536])
+                    ("a" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1537 1552])
+                    ("t" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1553 1569]))                  
+                :type "unsigned int")
+                nil [1506 2052])
+            ("search" function
+               (:arguments 
+                  ( ("T" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2136 2143])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2144 2155]))                  
+                :type "unsigned int")
+                nil [2114 2474])
+            ("insertatpos" function
+               (:arguments 
+                  ( ("T" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2625 2632])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2633 2643])
+                    ("h" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2644 2659])
+                    ("status" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2660 2673]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [2606 3319])
+            ("insert" function
+               (:arguments 
+                  ( ("T" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3511 3518])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3519 3529])
+                    ("status" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3530 3542])
+                    ("reclevel" variable (:type "int") (reparse-symbol arg-sub-list) [3543 3557]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [3497 5644])
+            ("rehash" function
+               (:arguments 
+                  ( ("T" variable (:type ("htbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5811 5818])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [5819 5828])
+                    ("status" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5829 5842]))                  
+                :type ("htbl" type (:type "class") nil nil))
+                nil [5797 7114])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7804 7813])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7814 7828]))                  
+                :type "int")
+                nil [7793 9072]))          
+      :file "cuckoohash-AV.c"
+      :pointmax 9073
+      :fsize 9074
+      :lastmodtime '(22461 12749 212740 285000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_ITER_CNT" . ((number "10" 264 . 266)))
+          ("FAILURE" . ((number "0" 307 . 308)))
+          ("SUCCESS" . ((number "1" 325 . 326)))
+          ("CHANGE_PARAMS" . ((number "4" 389 . 390)))
+          ("MAX_REC_LEVEL" . ((number "4" 289 . 290)))
+          ("DOUBLE_SIZE" . ((number "3" 365 . 366)))
+          ("PRESENT" . ((number "2" 343 . 344)))
+          ("INIT_T" . ((number "3" 241 . 242)))
+          )
+))
+  :file "!home!nascarsayan!Coding!C!Hash!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

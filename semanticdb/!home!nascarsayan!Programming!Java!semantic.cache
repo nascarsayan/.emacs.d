@@ -1,0 +1,57 @@
+;; Object Java/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Java/"
+  :tables
+  (list
+    (semanticdb-table "Hw.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.util.*" include nil nil [1 20])
+            ("Hw" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [65 78]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41 221]))                  
+                :type "class")
+                nil [21 223]))          
+      :file "Hw.java"
+      :pointmax 224
+      :fsize 223
+      :lastmodtime '(22351 38530 174430 837000)
+      :unmatched-syntax '((PUBLIC 21 . 27) ($EOI 38 . 38) (PUBLIC 21 . 27) ($EOI 37 . 37) (PUBLIC 21 . 27) ($EOI 37 . 37) (PUBLIC 21 . 27) ($EOI 36 . 36) (PUBLIC 21 . 27) ($EOI 35 . 35) (PUBLIC 21 . 27) ($EOI 37 . 37) (PUBLIC 21 . 27) ($EOI 36 . 36) (PUBLIC 21 . 27) ($EOI 35 . 35) (PUBLIC 21 . 27) ($EOI 34 . 34) (PUBLIC 21 . 27) (IDENTIFIER 28 . 31) (PUBLIC 21 . 27) (IDENTIFIER 28 . 29) (PUBLIC 21 . 27) ($EOI 29 . 29) (PUBLIC 21 . 27) ($EOI 28 . 28) (IDENTIFIER 21 . 26) (IDENTIFIER 21 . 24) (IDENTIFIER 21 . 23) (IDENTIFIER 21 . 22) ($EOI 20 . 20) ($EOI 19 . 19) ($EOI 19 . 19) ($EOI 18 . 18) ($EOI 28 . 28) ($EOI 18 . 18) ($EOI 16 . 16) ($EOI 26 . 26) ($EOI 16 . 16) ($EOI 15 . 15) ($EOI 14 . 14) ($EOI 14 . 14) ($EOI 13 . 13) ($EOI 11 . 11) ($EOI 9 . 9) ($EOI 8 . 8) (IDENTIFIER 1 . 5) (IDENTIFIER 1 . 4) (IDENTIFIER 1 . 3) (IDENTIFIER 1 . 3)))
+    (semanticdb-table "Test.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("Test" type
+               (:members 
+                  ( ("Test" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "a") (reparse-symbol formal_parameters) [31 32]))                          )
+                        (reparse-symbol class_member_declaration) [16 102])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [129 142]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [105 178]))                  
+                :type "class")
+                nil [1 180]))          
+      :file "Test.java"
+      :pointmax 181
+      :fsize 180
+      :lastmodtime '(22367 24576 81508 956000)
+      :unmatched-syntax '((DOT 29 . 30) (IDENTIFIER 21 . 27) (DOT 28 . 29) (DOT 29 . 30) (IDENTIFIER 21 . 27) (DOT 28 . 29))))
+  :file "!home!nascarsayan!Programming!Java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

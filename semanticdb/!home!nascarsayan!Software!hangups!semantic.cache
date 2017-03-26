@@ -1,0 +1,26 @@
+;; Object hangups/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hangups/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("proto" variable (:default-value ("hangups/hangouts.proto")) nil [44 75])
+            ("proto_py" variable (:default-value ("hangups/hangouts_pb2.py")) nil [75 110])
+            ("proto_doc" variable (:default-value ("docs/proto.rst")) nil [110 137])
+            ("test_proto" variable (:default-value ("hangups/test/test_pblite.proto")) nil [137 181])
+            ("test_proto_py" variable (:default-value ("hangups/test/test_pblite_pb2.py")) nil [181 229])
+            ("all" function (:arguments ("$(proto_py)" "$(test_proto_py)" "$(proto_doc)")) nil [230 277])
+            ("$(proto_py)" function (:arguments ("$(proto)")) nil [278 332])
+            ("$(test_proto_py)" function (:arguments ("$(test_proto)")) nil [333 402])
+            ("$(proto_doc)" function (:arguments ("$(proto)")) nil [403 486])
+            ("clean" function nil nil [487 543]))          
+      :file "Makefile"
+      :pointmax 543
+      :fsize 542
+      :lastmodtime '(22737 4837 382085 840000)
+      :unmatched-syntax '((shell-command 495 . 542) (bol 494 . 494))))
+  :file "!home!nascarsayan!Software!hangups!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,27 @@
+;; Object .links2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".links2/"
+  :tables
+  (list
+    (semanticdb-table "bookmarks.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Links bookmarks" section (:members 
+              ( ("Links bookmarks" section (:members 
+                  ( ("Links" section nil nil [192 220])
+                    ("English" section (:members 
+                      ( ("Calibration Procedure" anchor nil nil [250 253])
+                        ("Links Homepage" anchor nil nil [366 369])
+                        ("Links Manual" anchor nil nil [459 462]))                      ) nil [220 540])
+                    ("Cesky" section (:members 
+                      ( ("Kalibracni procedura" anchor nil nil [568 571])
+                        ("Links: domaci stranka" anchor nil nil [681 684])
+                        ("Manual k Linksu" anchor nil nil [794 797]))                      ) nil [540 890]))                  ) nil [150 890]))              ) nil [111 890]))          
+      :file "bookmarks.html"
+      :pointmax 890
+      :fsize 889
+      :lastmodtime '(22425 49637 977638 81000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!.links2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,28 @@
+;; Object .fr-DyjA0b/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".fr-DyjA0b/"
+  :tables
+  (list
+    (semanticdb-table "prog3.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [49 58])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59 72]))                  
+                :type "int")
+                nil [40 1030]))          
+      :file "prog3.c"
+      :pointmax 1031
+      :fsize 1030
+      :lastmodtime '(22435 28650 0 0)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!.cache!.fr-DyjA0b!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,19 @@
+;; Object temp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "temp/"
+  :tables
+  (list
+    (semanticdb-table "img.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [24 33])
+            ("main" function nil nil [35 299])
+            ("if" code nil nil [300 339]))          
+      :file "img.py"
+      :pointmax 339
+      :fsize 338
+      :lastmodtime '(22448 56115 74473 200000)
+      :unmatched-syntax nil))
+  :file "!media!nascarsayan!KouseiArima!Knowledge!CompterScience!temp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

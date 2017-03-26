@@ -1,0 +1,38 @@
+;; Object C/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "C/"
+  :tables
+  (list
+    (semanticdb-table "bucket_sort.c~"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("bucket_sort" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [57 69])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [70 79]))                  
+                :type "void")
+                nil [40 1007])
+            ("stdio.h" include (:system-flag t) nil [1008 1026])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1037 1046])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1047 1060]))                  
+                :type "int")
+                nil [1028 1452]))          
+      :file "bucket_sort.c~"
+      :pointmax 1453
+      :fsize 1452
+      :lastmodtime '(22384 44698 627171 0)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

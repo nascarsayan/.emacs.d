@@ -1,0 +1,38 @@
+;; Object Deter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Deter/"
+  :tables
+  (list
+    (semanticdb-table "deter.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("malloc.h" include (:system-flag t) nil [20 39])
+            ("deter" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [53 63])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [63 67]))                  
+                :type "double")
+                nil [40 68])
+            ("main" function (:type "int") nil [69 465])
+            ("deter" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [479 492])
+                    ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [492 500]))                  
+                :type "double")
+                nil [466 939]))          
+      :file "deter.c"
+      :pointmax 940
+      :fsize 939
+      :lastmodtime '(22365 42519 764486 521000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Programming!C!Deter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

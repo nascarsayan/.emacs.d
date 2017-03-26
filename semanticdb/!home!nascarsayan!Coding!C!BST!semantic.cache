@@ -1,0 +1,318 @@
+;; Object BST/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "BST/"
+  :tables
+  (list
+    (semanticdb-table "bst.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("diff" variable (:constant-flag t) nil [48 52])
+            ("_bst" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [126 135])
+                    ("left" variable
+                       (:pointer 1
+                        :type ("_bst" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [138 164])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("_bst" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [138 164]))                  
+                :type "struct")
+                nil [110 167])
+            ("bst" type
+               (:typedef ("_bst" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [169 193])
+            ("root" variable
+               (:pointer 1
+                :type ("bst" type (:type "class") nil nil))
+                nil [194 204])
+            ("ind" variable (:type "int") nil [205 213])
+            ("insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 2
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227 238])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [239 245]))                  
+                :type "void")
+                nil [215 246])
+            ("inorder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 270]))                  
+                :type "void")
+                nil [247 271])
+            ("preorder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [286 296]))                  
+                :type "void")
+                nil [272 297])
+            ("postorder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [313 323]))                  
+                :type "void")
+                nil [298 324])
+            ("height" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [336 346]))                  
+                :type "int")
+                nil [325 347])
+            ("depth" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [358 368])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [368 376]))                  
+                :type "int")
+                nil [348 377])
+            ("max" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [386 396]))                  
+                :type "int")
+                nil [378 397])
+            ("min" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [406 416]))                  
+                :type "int")
+                nil [398 417])
+            ("father" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [429 439])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [440 448]))                  
+                :type "int")
+                nil [418 449])
+            ("child" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [461 471])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [472 480]))                  
+                :type "void")
+                nil [450 481])
+            ("predecessor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("stdio.h" include (:system-flag t) nil [1 19])
+                    ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [498 508])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [509 517]))                  
+                :type "int")
+                nil [482 518])
+            ("successor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [533 543])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [544 552]))                  
+                :type "int")
+                nil [519 553])
+            ("count_leaves" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [571 581]))                  
+                :type "int")
+                nil [554 582])
+            ("inorder_store" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [602 612])
+                    ("inor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [613 623]))                  
+                :type "void")
+                nil [583 624])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [663 672])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [673 686]))                  
+                :type "int")
+                nil [654 2508])
+            ("insert" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 2
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2522 2533])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2534 2540]))                  
+                :type "void")
+                nil [2510 2969])
+            ("inorder" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2983 2993]))                  
+                :type "void")
+                nil [2970 3099])
+            ("preorder" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3114 3124]))                  
+                :type "void")
+                nil [3100 3232])
+            ("postorder" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3248 3258]))                  
+                :type "void")
+                nil [3233 3368])
+            ("height" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3380 3390]))                  
+                :type "int")
+                nil [3369 3504])
+            ("depth" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3515 3525])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [3525 3533]))                  
+                :type "int")
+                nil [3505 3690])
+            ("max" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3699 3709]))                  
+                :type "int")
+                nil [3691 3768])
+            ("min" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3777 3787]))                  
+                :type "int")
+                nil [3769 3844])
+            ("father" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3856 3866])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [3867 3875]))                  
+                :type "int")
+                nil [3845 4120])
+            ("child" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4132 4142])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [4143 4151]))                  
+                :type "void")
+                nil [4121 4484])
+            ("predecessor" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4501 4511])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [4512 4520]))                  
+                :type "int")
+                nil [4485 4838])
+            ("successor" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4853 4863])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [4864 4872]))                  
+                :type "int")
+                nil [4839 5097])
+            ("count_leaves" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5115 5125]))                  
+                :type "int")
+                nil [5098 5220])
+            ("inorder_store" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("bst" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5240 5250])
+                    ("inor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5251 5261]))                  
+                :type "void")
+                nil [5221 5388]))          
+      :file "bst.c"
+      :pointmax 5579
+      :fsize 5578
+      :lastmodtime '(22435 22193 332228 867000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!BST!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

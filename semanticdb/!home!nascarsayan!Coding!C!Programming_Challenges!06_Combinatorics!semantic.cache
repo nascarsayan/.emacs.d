@@ -1,0 +1,26 @@
+;; Object 06_Combinatorics/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "06_Combinatorics/"
+  :tables
+  (list
+    (semanticdb-table "q01.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 101]))          
+      :file "q01.c"
+      :pointmax 101
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Programming_Challenges!06_Combinatorics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

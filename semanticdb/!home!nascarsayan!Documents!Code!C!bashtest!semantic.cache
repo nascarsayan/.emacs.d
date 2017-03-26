@@ -1,0 +1,49 @@
+;; Object bashtest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bashtest/"
+  :tables
+  (list
+    (semanticdb-table "actual.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("scr" variable (:constant-flag t) nil [48 51])
+            ("PATH_MAX" variable (:constant-flag t) nil [86 94])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [107 116])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117 130]))                  
+                :type "int")
+                nil [98 334]))          
+      :file "actual.c"
+      :pointmax 335
+      :fsize 334
+      :lastmodtime '(22736 17361 506282 349000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("scr" . ((string "\"\\
+#bin/bash/\\n\\
+ls -l\\
+\"" 52 . 77)))
+          ("PATH_MAX" . ((number "50" 95 . 97)))
+          )
+)
+    (semanticdb-table "f2.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("unistd.h" include (:system-flag t) nil [20 39])
+            ("main" function (:type "int") nil [41 178]))          
+      :file "f2.c"
+      :pointmax 179
+      :fsize 178
+      :lastmodtime '(22736 17361 506282 349000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Documents!Code!C!bashtest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

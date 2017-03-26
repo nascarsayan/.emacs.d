@@ -1,0 +1,21 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "f1.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("sqsq" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [11 17]))                  
+                :type "int")
+                nil [1 51]))          
+      :file "f1.c"
+      :pointmax 52
+      :fsize 51
+      :lastmodtime '(22428 43520 279712 577000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Recursion!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

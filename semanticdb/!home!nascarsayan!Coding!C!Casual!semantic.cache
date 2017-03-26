@@ -1,0 +1,169 @@
+;; Object Casual/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Casual/"
+  :tables
+  (list
+    (semanticdb-table "linked.c"
+      :major-mode 'c-mode
+      :tags nil
+      :file "linked.c"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22432 59262 131309 890000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sonu.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 18])
+            ("stdlib.h" include (:system-flag t) nil [19 37])
+            ("node_type" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [68 77])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("node_type" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [80 103]))                  
+                :type "struct")
+                nil [39 110])
+            ("node" type
+               (:typedef ("node_type" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [39 110])
+            ("list" type
+               (:typedef ("node" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [112 131])
+            ("start" variable (:type ("list" type (:type "class") nil nil)) nil [132 143])
+            ("show_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159 164]))                  
+                :type "void")
+                nil [144 165])
+            ("delete_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183 189]))                  
+                :type "void")
+                nil [166 190])
+            ("main" function (:type "int") nil [212 913])
+            ("show_list" function
+               (:arguments 
+                  ( ("ptr" variable (:type ("list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [930 939]))                  
+                :type "void")
+                nil [915 1035])
+            ("delete_list" function
+               (:arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type ("list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1054 1066]))                  
+                :type "void")
+                nil [1037 1391]))          
+      :file "sonu.c"
+      :pointmax 1392
+      :fsize 1391
+      :lastmodtime '(22428 21713 858936 3000)
+      :unmatched-syntax nil)
+    (semanticdb-table "linked.c~"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("_node" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [65 74])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [77 96]))                  
+                :type "struct")
+                nil [40 103])
+            ("node" type
+               (:typedef ("_node" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [40 103])
+            ("add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114 125]))                  
+                :type "void")
+                nil [105 126])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [136 145])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [146 159]))                  
+                :type "int")
+                nil [127 414])
+            ("add" function
+               (:arguments 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [425 436]))                  
+                :type "void")
+                nil [416 460]))          
+      :file "linked.c~"
+      :pointmax 461
+      :fsize 68
+      :lastmodtime '(22432 52540 331070 512000)
+      :unmatched-syntax nil)
+    (semanticdb-table "conv.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [49 58])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59 72]))                  
+                :type "int")
+                nil [40 287]))          
+      :file "conv.c"
+      :pointmax 288
+      :fsize 287
+      :lastmodtime '(22461 14853 888815 237000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sample.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [29 38])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39 52]))                  
+                :type "int")
+                nil [20 138]))          
+      :file "sample.c"
+      :pointmax 139
+      :fsize 138
+      :lastmodtime '(22461 20936 937031 868000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Casual!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

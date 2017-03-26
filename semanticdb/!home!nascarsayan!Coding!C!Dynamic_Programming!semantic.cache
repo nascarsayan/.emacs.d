@@ -1,0 +1,140 @@
+;; Object Dynamic_Programming/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Dynamic_Programming/"
+  :tables
+  (list
+    (semanticdb-table "rod_cutting.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("cut_rod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [74 85])
+                    ("best_price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [86 102])
+                    ("path_to_opti" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [103 121])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [122 133])
+                    ("path_index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [134 150]))                  
+                :type "void")
+                nil [61 151])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [162 171])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [172 185]))                  
+                :type "int")
+                nil [153 1113])
+            ("cut_rod" function
+               (:arguments 
+                  ( ("price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1127 1138])
+                    ("best_price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1139 1155])
+                    ("path_to_opti" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1156 1174])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1175 1186])
+                    ("path_index" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1187 1203]))                  
+                :type "void")
+                nil [1114 1913]))          
+      :file "rod_cutting.c"
+      :pointmax 1914
+      :fsize 1913
+      :lastmodtime '(22389 57347 640890 712000)
+      :unmatched-syntax nil)
+    (semanticdb-table "rod_cutting.c~"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("cut_rod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [74 85])
+                    ("best_price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [86 102])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [103 114]))                  
+                :type "void")
+                nil [61 115])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [126 135])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [136 149]))                  
+                :type "int")
+                nil [117 779])
+            ("cut_rod" function
+               (:arguments 
+                  ( ("price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [793 804])
+                    ("best_price" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [805 821])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [822 833]))                  
+                :type "void")
+                nil [780 1209]))          
+      :file "rod_cutting.c~"
+      :pointmax 1210
+      :fsize 1596
+      :lastmodtime '(22388 56888 652736 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "b_rod_cutting.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 1076]))          
+      :file "b_rod_cutting.c"
+      :pointmax 1077
+      :fsize 1107
+      :lastmodtime '(22390 9704 747526 719000)
+      :unmatched-syntax nil))
+  :file "!home!nascarsayan!Coding!C!Dynamic_Programming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,42 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/" . "nascarsayan/")
+ ("/home/nascarsayan/Coding/C/" . "BST/")
+ ("/home/nascarsayan/Coding/" . "C/")
+ ("/home/nascarsayan/" . "Coding/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/nascarsayan/"
+ "/home/nascarsayan/Coding/C/BST/"
+ "/home/nascarsayan/Coding/C/Casual/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "bst.c"
+ "linked.c"
+ "sonu.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/" (22410 18425 477302 698000) "../" "./" "nascarsayan/")
+
+ ("/home/nascarsayan/Coding/C/BST/" (22428 21901 922942 700000) "bst.c~" "../" ".#bst.c" "./" "#bst.c#" "a.out" "bst.c")
+
+ ("/home/nascarsayan/Coding/C/Casual/" (22428 21713 866936 3000) "linked.c~" "sonu.c~" "../" "./" "sonu.c" "linked.c" "a.out" "pass_local_pointer.c")
+
+ ("/home/nascarsayan/" (22428 21774 754938 171000) ".bashrc" ".emacs" ".adobe/" ".cache/" "hotstarsportslivestreamer-master/" "Public/" ".local/" "mpi.pyc" "../" ".Xauthority" ".dmrc" ".xsession-errors" "examples.desktop" "file1" ".bash_history" "prime.py" "Music/" "Templates/" "./" ".xsession-errors.old" "Videos/" ".emacs.d/" ".profile" "prime.pyc" "Downloads/" ".macromedia/" ".gconf/" ".gnupg/" ".pki/" "Coding/" "tor-browser_en-US/" ".nano/" "Pictures/" "file" ".mozilla/" ".emacs~" ".ICEauthority" ".bash_logout" ".sudo_as_admin_successful" "file2" ".mplayer/" ".links2/" ".gnome/" "Desktop/" "mpi.py" ".dc++/" ".config/" "Documents/")
+
+ ("/home/nascarsayan/Coding/C/" (22422 15477 253905 290000) "Recursion/" "bucket_sort.c~" "Codechef/" "../" "BST/" "Programming_Challenges/" "River_Crossing/" "./" "Heap/" "Debdut/" "Sort/" "Dynamic_Programming/" "Casual/")
+
+ ("/home/nascarsayan/Coding/" (22405 56747 516758 0) "../" "C/" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
