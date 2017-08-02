@@ -148,3 +148,17 @@
 (provide 'init)
 
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (bison-mode zygospore ws-butler volatile-highlights undo-tree tinysegmenter solarized-theme smartparens org neotree key-chord jdee java-snippets java-imports iedit helm-swoop helm-projectile helm-gtags google-c-style ggtags flymake-google-cpplint flymake-cursor flycheck-irony duplicate-thing dtrt-indent darkokai-theme company-c-headers comment-dwim-2 color-theme-solarized color-theme-sanityinc-solarized clean-aindent-mode auto-complete-sage auto-complete-rst auto-complete-pcmp auto-complete-nxml auto-complete-exuberant-ctags auto-complete-clang-async auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex auto-compile auto-auto-indent aurora-theme anzu))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

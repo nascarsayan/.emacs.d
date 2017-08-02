@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("num_lines" variable
+               (:default-value "0"
+                :type "int")
+                nil [413 446])
+            ("num_chars" variable
+               (:default-value "0"
+                :type "int")
+                nil [413 446])
+            ("num_lines" variable (:type "int") nil [456 466])
+            ("num_chars" variable (:type "int") nil [469 479])
+            ("num_chars" variable (:type "int") nil [484 494])
+            ("main" function (:type "int") nil [499 590]))          
+      :file "sample.lex"
+      :pointmax 592
+      :fsize 591
+      :lastmodtime '(22913 23750 245400 173000)
+      :unmatched-syntax '((punctuation 496 . 497) (punctuation 495 . 496) (punctuation 483 . 484) (punctuation 482 . 483) (punctuation 480 . 481) (punctuation 468 . 469) (punctuation 467 . 468) (punctuation 455 . 456) (punctuation 454 . 455) (symbol 452 . 453) (charquote 451 . 452) (punctuation 449 . 450) (punctuation 448 . 449))))
+  :file "!home!nascarsayan!code!flex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
